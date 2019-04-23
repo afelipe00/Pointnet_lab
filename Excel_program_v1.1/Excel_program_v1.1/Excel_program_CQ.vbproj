@@ -1,0 +1,714 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProjectTypeGuids>{BAA0C2D2-18E2-41B9-852F-F413020CAA33};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Excel_program_v1._1</RootNamespace>
+    <AssemblyName>Excel_program_v1.1</AssemblyName>
+    <VSTO_HostDocumentName>Contabilidad Qbit.xlsm</VSTO_HostDocumentName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <DefineConstants>VSTO40</DefineConstants>
+    <OfficeApplication>Excel</OfficeApplication>
+    <ProjectGuid>{018B7502-562C-4891-8C09-B84DB4CA89A2}</ProjectGuid>
+    <SolutionID>6475e9df-3f95-440c-a624-7cd7a18d4e19</SolutionID>
+    <IsWebBootstrapper>False</IsWebBootstrapper>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <PublishUrl>C:\Users\Felipe Diaz\Desktop\Contabilidad\</PublishUrl>
+    <InstallUrl />
+    <TargetCulture>es</TargetCulture>
+    <ApplicationVersion>1.0.0.2</ApplicationVersion>
+    <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>days</UpdateIntervalUnits>
+    <ProductName>Excel_program_v1.1</ProductName>
+    <PublisherName />
+    <SupportUrl />
+    <FriendlyName>Excel_program_v1.1</FriendlyName>
+    <OfficeApplicationDescription />
+  </PropertyGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VSTORuntime.4.0">
+      <Visible>False</Visible>
+      <ProductName>Runtime de Microsoft Visual Studio 2010 Tools para Office %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <PropertyGroup>
+    <VSTO_EmbedTypeLibraryInAssembly>false</VSTO_EmbedTypeLibraryInAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>$(DefineConstants)</DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Excel_program_v1.1.xml</DocumentationFile>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Excel_program_v1.1.xml</DocumentationFile>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <!--
+    This section specifies references for the project.
+  -->
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Tools.v4.0.Framework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Tools.Applications.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Tools.Common.v4.0.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel.v4.0.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>False</Private>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Vbe.Interop, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>False</Private>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>False</Private>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Text" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="Microsoft.Office.Tools.Excel" />
+    <Import Include="Microsoft.VisualStudio.Tools.Applications.Runtime" />
+    <Import Include="Office = Microsoft.Office.Core" />
+    <Import Include="Excel = Microsoft.Office.Interop.Excel" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control\Class_add_client.vb" />
+    <Compile Include="Control\Class_add_compra.vb" />
+    <Compile Include="Control\Class_add_prod.vb" />
+    <Compile Include="Control\Class_add_provee.vb" />
+    <Compile Include="Control\Class_add_return.vb" />
+    <Compile Include="Control\Class_add_user.vb" />
+    <Compile Include="Control\Class_add_codigo.vb" />
+    <Compile Include="Control\Class_add_venta.vb" />
+    <Compile Include="Control\Class_edit _prod.vb" />
+    <Compile Include="Control\Class_edit_client.vb" />
+    <Compile Include="Control\Class_edit_codigo.vb" />
+    <Compile Include="Control\Class_edit_provee.vb" />
+    <Compile Include="Control\Class_edit_user.vb" />
+    <Compile Include="Control\Class_funciones.vb" />
+    <Compile Include="Control\Class_login.vb" />
+    <Compile Include="Control\Class_user_rest.vb" />
+    <Compile Include="Forms\Form_add_client.Designer.vb">
+      <DependentUpon>Form_add_client.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_add_client.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_add_codigo.Designer.vb">
+      <DependentUpon>Form_add_codigo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_add_codigo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_add_item_compra.Designer.vb">
+      <DependentUpon>Form_add_item_compra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_add_item_compra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_add_item_venta.Designer.vb">
+      <DependentUpon>Form_add_item_venta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_add_item_venta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_add_provee.Designer.vb">
+      <DependentUpon>Form_add_provee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_add_provee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_add_purchase.Designer.vb">
+      <DependentUpon>Form_add_purchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_add_purchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_balance_general.Designer.vb">
+      <DependentUpon>Form_balance_general.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_balance_general.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_book_up.Designer.vb">
+      <DependentUpon>Form_book_up.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_book_up.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_comp_purchase.Designer.vb">
+      <DependentUpon>Form_comp_purchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_comp_purchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_comp_sale.Designer.vb">
+      <DependentUpon>Form_comp_sale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_comp_sale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_conf_edi_prod.Designer.vb">
+      <DependentUpon>Form_conf_edi_prod.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_conf_edi_prod.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_conf_finalizar.Designer.vb">
+      <DependentUpon>Form_conf_finalizar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_conf_finalizar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_cotizacion.Designer.vb">
+      <DependentUpon>Form_cotizacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_cotizacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_edit_client.Designer.vb">
+      <DependentUpon>Form_edit_client.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_edit_client.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_edit_codigo.Designer.vb">
+      <DependentUpon>Form_edit_codigo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_edit_codigo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_edit_prod.Designer.vb">
+      <DependentUpon>Form_edit_prod.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_edit_prod.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_estado_devolucion_compra.Designer.vb">
+      <DependentUpon>Form_estado_devolucion_compra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_estado_devolucion_compra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Login.Designer.vb">
+      <DependentUpon>Form_Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Login_other.Designer.vb">
+      <DependentUpon>Form_Login_other.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Login_other.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_permisos.Designer.vb">
+      <DependentUpon>Form_permisos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_permisos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_add_user.Designer.vb">
+      <DependentUpon>Form_add_user.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_add_user.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_ajustes.Designer.vb">
+      <DependentUpon>Form_ajustes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_ajustes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_add_prod.Designer.vb">
+      <DependentUpon>Form_add_prod.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_add_prod.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_estado_resultados.Designer.vb">
+      <DependentUpon>Form_estado_resultados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_estado_resultados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_existencias.Designer.vb">
+      <DependentUpon>Form_existencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_existencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_mov_fecha.Designer.vb">
+      <DependentUpon>Form_mov_fecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_mov_fecha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_mov_product.Designer.vb">
+      <DependentUpon>Form_mov_product.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_mov_product.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_edit_provee.Designer.vb">
+      <DependentUpon>Form_edit_provee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_edit_provee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_edit_user.Designer.vb">
+      <DependentUpon>Form_edit_user.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_edit_user.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_return_purchase.Designer.vb">
+      <DependentUpon>Form_return_purchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_return_purchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_return_sales.Designer.vb">
+      <DependentUpon>Form_return_sales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_return_sales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_sales.Designer.vb">
+      <DependentUpon>Form_sales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_sales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Returns_MostrarLista.Designer.vb">
+      <DependentUpon>Form_Returns_MostrarLista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Returns_MostrarLista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hoja1.Designer.vb">
+      <DependentUpon>Hoja1.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja1.vb">
+      <DependentUpon>Contabilidad Qbit.xlsm</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja10.Designer.vb">
+      <DependentUpon>Hoja10.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja10.vb">
+      <DependentUpon>Contabilidad Qbit.xlsm</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja11.Designer.vb">
+      <DependentUpon>Hoja11.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja11.vb">
+      <DependentUpon>Contabilidad Qbit.xlsm</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja12.Designer.vb">
+      <DependentUpon>Hoja12.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja12.vb">
+      <DependentUpon>Contabilidad Qbit.xlsm</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja13.Designer.vb">
+      <DependentUpon>Hoja13.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja13.vb">
+      <DependentUpon>Contabilidad Qbit.xlsm</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja14.Designer.vb">
+      <DependentUpon>Hoja14.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja14.vb">
+      <DependentUpon>Contabilidad Qbit.xlsm</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja2.Designer.vb">
+      <DependentUpon>Hoja2.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja2.vb">
+      <DependentUpon>Contabilidad Qbit.xlsm</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja3.Designer.vb">
+      <DependentUpon>Hoja3.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja3.vb">
+      <DependentUpon>Contabilidad Qbit.xlsm</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja4.Designer.vb">
+      <DependentUpon>Hoja4.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja4.vb">
+      <DependentUpon>Contabilidad Qbit.xlsm</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja5.Designer.vb">
+      <DependentUpon>Hoja5.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja5.vb">
+      <DependentUpon>Contabilidad Qbit.xlsm</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja6.Designer.vb">
+      <DependentUpon>Hoja6.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja6.vb">
+      <DependentUpon>Contabilidad Qbit.xlsm</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja7.Designer.vb">
+      <DependentUpon>Hoja7.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja7.vb">
+      <DependentUpon>Contabilidad Qbit.xlsm</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja8.Designer.vb">
+      <DependentUpon>Hoja8.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja8.vb">
+      <DependentUpon>Contabilidad Qbit.xlsm</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja9.Designer.vb">
+      <DependentUpon>Hoja9.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja9.vb">
+      <DependentUpon>Contabilidad Qbit.xlsm</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="Ribbon1.Designer.vb">
+      <DependentUpon>Ribbon1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ribbon1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ThisWorkbook.Designer.vb">
+      <DependentUpon>ThisWorkbook.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="ThisWorkbook.vb">
+      <DependentUpon>Contabilidad Qbit.xlsm</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\Form_add_client.resx">
+      <DependentUpon>Form_add_client.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_add_codigo.resx">
+      <DependentUpon>Form_add_codigo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_add_item_compra.resx">
+      <DependentUpon>Form_add_item_compra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_add_item_venta.resx">
+      <DependentUpon>Form_add_item_venta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_add_prod.resx">
+      <DependentUpon>Form_add_prod.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_add_provee.resx">
+      <DependentUpon>Form_add_provee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_add_purchase.resx">
+      <DependentUpon>Form_add_purchase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_add_user.resx">
+      <DependentUpon>Form_add_user.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_conf_edi_prod.resx">
+      <DependentUpon>Form_conf_edi_prod.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_conf_finalizar.resx">
+      <DependentUpon>Form_conf_finalizar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_edit_client.resx">
+      <DependentUpon>Form_edit_client.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_edit_codigo.resx">
+      <DependentUpon>Form_edit_codigo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_edit_prod.resx">
+      <DependentUpon>Form_edit_prod.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_edit_provee.resx">
+      <DependentUpon>Form_edit_provee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_edit_user.resx">
+      <DependentUpon>Form_edit_user.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_estado_devolucion_compra.resx">
+      <DependentUpon>Form_estado_devolucion_compra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Login.resx">
+      <DependentUpon>Form_Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Login_other.resx">
+      <DependentUpon>Form_Login_other.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_permisos.resx">
+      <DependentUpon>Form_permisos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_return_purchase.resx">
+      <DependentUpon>Form_return_purchase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Returns_MostrarLista.resx">
+      <DependentUpon>Form_Returns_MostrarLista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_sales.resx">
+      <DependentUpon>Form_sales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hoja11.resx">
+      <DependentUpon>Hoja11.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hoja12.resx">
+      <DependentUpon>Hoja12.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hoja2.resx">
+      <DependentUpon>Hoja2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hoja3.resx">
+      <DependentUpon>Hoja3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hoja5.resx">
+      <DependentUpon>Hoja5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hoja6.resx">
+      <DependentUpon>Hoja6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hoja7.resx">
+      <DependentUpon>Hoja7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hoja8.resx">
+      <DependentUpon>Hoja8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hoja9.resx">
+      <DependentUpon>Hoja9.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Ribbon1.resx">
+      <DependentUpon>Ribbon1.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Contabilidad Qbit.xlsm" />
+    <None Include="Excel_program_v1.1_TemporaryKey.pfx" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ThisWorkbook.Designer.xml">
+      <DependentUpon>ThisWorkbook.vb</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Hoja1.Designer.xml">
+      <DependentUpon>Hoja1.vb</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Hoja2.Designer.xml">
+      <DependentUpon>Hoja2.vb</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Hoja3.Designer.xml">
+      <DependentUpon>Hoja3.vb</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Hoja4.Designer.xml">
+      <DependentUpon>Hoja4.vb</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Hoja5.Designer.xml">
+      <DependentUpon>Hoja5.vb</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Hoja6.Designer.xml">
+      <DependentUpon>Hoja6.vb</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Hoja7.Designer.xml">
+      <DependentUpon>Hoja7.vb</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Hoja8.Designer.xml">
+      <DependentUpon>Hoja8.vb</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Hoja9.Designer.xml">
+      <DependentUpon>Hoja9.vb</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Hoja10.Designer.xml">
+      <DependentUpon>Hoja10.vb</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Hoja11.Designer.xml">
+      <DependentUpon>Hoja11.vb</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Hoja12.Designer.xml">
+      <DependentUpon>Hoja12.vb</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Hoja13.Designer.xml">
+      <DependentUpon>Hoja13.vb</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Hoja14.Designer.xml">
+      <DependentUpon>Hoja14.vb</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Excel_program_v1.1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D2249B31C35F111ED8E0D95D3879B02252DC4CA7</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\OfficeTools\Microsoft.VisualStudio.Tools.Office.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{BAA0C2D2-18E2-41B9-852F-F413020CAA33}">
+        <ProjectProperties HostName="Contabilidad Qbit.xlsm" HostPackage="{3F2B7691-D1D1-402F-9370-2704A737CF60}" OfficeVersion="15.0" VstxVersion="4.0" ApplicationType="XLS" Language="VB" TemplatesPath="VSTOTemplates" DebugInfoExeName="C:\Program Files (x86)\Microsoft Office\root\Office16\excel.exe" DebugInfoCommandLine="/x &quot;[$OUTPUT]Contabilidad Qbit.xlsm&quot;" />
+        <Host Name="Excel Document" Path=".\Contabilidad Qbit.xlsm" PublishedHash="B71B19A1FE33F2CC4FB9B7659CED87CC884411AF">
+          <HostItem Name="Hoja1" Code="Hoja1.vb" CanonicalName="Hoja1" PublishedHash="2A3B4BF2CB0D9987344327EE89AC4603E2EF1DFF" DisplayName="Principal" Blueprint="Hoja1.Designer.xml" GeneratedCode="Hoja1.Designer.vb" />
+          <HostItem Name="Hoja10" Code="Hoja10.vb" CanonicalName="Hoja10" DisplayName="Reg. Login" Blueprint="Hoja10.Designer.xml" GeneratedCode="Hoja10.Designer.vb" />
+          <HostItem Name="Hoja11" Code="Hoja11.vb" CanonicalName="Hoja11" DisplayName="Codigos" Blueprint="Hoja11.Designer.xml" GeneratedCode="Hoja11.Designer.vb" />
+          <HostItem Name="Hoja12" Code="Hoja12.vb" CanonicalName="Hoja12" DisplayName="Devoluciones" Blueprint="Hoja12.Designer.xml" GeneratedCode="Hoja12.Designer.vb" />
+          <HostItem Name="Hoja13" Code="Hoja13.vb" CanonicalName="Hoja13" DisplayName="Egresos" Blueprint="Hoja13.Designer.xml" GeneratedCode="Hoja13.Designer.vb" />
+          <HostItem Name="Hoja14" Code="Hoja14.vb" CanonicalName="Hoja14" DisplayName="Utilidad" Blueprint="Hoja14.Designer.xml" GeneratedCode="Hoja14.Designer.vb" />
+          <HostItem Name="Hoja2" Code="Hoja2.vb" CanonicalName="Hoja2" PublishedHash="D5E7CC74B376BD5A2F474BAEFB330993892849A7" DisplayName="Productos" Blueprint="Hoja2.Designer.xml" GeneratedCode="Hoja2.Designer.vb" />
+          <HostItem Name="Hoja3" Code="Hoja3.vb" CanonicalName="Hoja3" PublishedHash="2B4E87CEEFE53C0CAE0E7D749DB2DEC481471D2F" DisplayName="Mov. Inventario" Blueprint="Hoja3.Designer.xml" GeneratedCode="Hoja3.Designer.vb" />
+          <HostItem Name="Hoja4" Code="Hoja4.vb" CanonicalName="Hoja4" PublishedHash="74FCE4135F8D68C9E3A204A67B48745BEEE692BE" DisplayName="Ingresos" Blueprint="Hoja4.Designer.xml" GeneratedCode="Hoja4.Designer.vb" />
+          <HostItem Name="Hoja5" Code="Hoja5.vb" CanonicalName="Hoja5" PublishedHash="747A14EB32C9D5867DB0192AA903EFD03A51990C" DisplayName="Inventario" Blueprint="Hoja5.Designer.xml" GeneratedCode="Hoja5.Designer.vb" />
+          <HostItem Name="Hoja6" Code="Hoja6.vb" CanonicalName="Hoja6" PublishedHash="AFAF03B7A876DD63B0BC9C1D86222CCFDADAE99C" DisplayName="Clientes" Blueprint="Hoja6.Designer.xml" GeneratedCode="Hoja6.Designer.vb" />
+          <HostItem Name="Hoja7" Code="Hoja7.vb" CanonicalName="Hoja7" PublishedHash="3F9106A6364664F68ACAB9CBA58BED87E38B19C9" DisplayName="Proveedores" Blueprint="Hoja7.Designer.xml" GeneratedCode="Hoja7.Designer.vb" />
+          <HostItem Name="Hoja8" Code="Hoja8.vb" CanonicalName="Hoja8" DisplayName="Usuarios" Blueprint="Hoja8.Designer.xml" GeneratedCode="Hoja8.Designer.vb" />
+          <HostItem Name="Hoja9" Code="Hoja9.vb" CanonicalName="Hoja9" DisplayName="Form. Facturas" Blueprint="Hoja9.Designer.xml" GeneratedCode="Hoja9.Designer.vb" />
+          <HostItem Name="ThisWorkbook" Code="ThisWorkbook.vb" CanonicalName="ThisWorkbook" PublishedHash="67CC96EE61C2022380542DAF45AC1511EF78460F" Blueprint="ThisWorkbook.Designer.xml" GeneratedCode="ThisWorkbook.Designer.vb" />
+        </Host>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!--
+    To modify your build process, add your task inside one of the targets below and uncomment it.
+    Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

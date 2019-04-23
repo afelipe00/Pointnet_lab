@@ -1,0 +1,17 @@
+C:\Users\Felipe Diaz\source\repos\Excel_program_v1.1\Excel_program_v1.1\bin\Debug\Excel_program_v1.1.dll
+C:\Users\Felipe Diaz\source\repos\Excel_program_v1.1\Excel_program_v1.1\bin\Debug\Excel_program_v1.1.pdb
+C:\Users\Felipe Diaz\source\repos\Excel_program_v1.1\Excel_program_v1.1\bin\Debug\Excel_program_v1.1.xml
+C:\Users\Felipe Diaz\source\repos\Excel_program_v1.1\Excel_program_v1.1\bin\Debug\Excel_program_v1.1.dll.manifest
+C:\Users\Felipe Diaz\source\repos\Excel_program_v1.1\Excel_program_v1.1\bin\Debug\Excel_program_v1.1.vsto
+C:\Users\Felipe Diaz\source\repos\Excel_program_v1.1\Excel_program_v1.1\bin\Debug\Contabilidad Qbit.xlsm
+C:\Users\Felipe Diaz\source\repos\Excel_program_v1.1\Excel_program_v1.1\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\Users\Felipe Diaz\source\repos\Excel_program_v1.1\Excel_program_v1.1\bin\Debug\Microsoft.Office.Tools.Excel.v4.0.Utilities.dll
+C:\Users\Felipe Diaz\source\repos\Excel_program_v1.1\Excel_program_v1.1\obj\Debug\Excel_program_v1.1.vbprojAssemblyReference.cache
+C:\Users\Felipe Diaz\source\repos\Excel_program_v1.1\Excel_program_v1.1\obj\Debug\Excel_program_v1._1.Resources.resources
+C:\Users\Felipe Diaz\source\repos\Excel_program_v1.1\Excel_program_v1.1\obj\Debug\Excel_program_v1.1.vbproj.GenerateResource.cache
+C:\Users\Felipe Diaz\source\repos\Excel_program_v1.1\Excel_program_v1.1\obj\Debug\Excel_program_v1.1.vbproj.CoreCompileInputs.cache
+C:\Users\Felipe Diaz\source\repos\Excel_program_v1.1\Excel_program_v1.1\obj\Debug\Excel_program_v1.1.vbproj.CopyComplete
+C:\Users\Felipe Diaz\source\repos\Excel_program_v1.1\Excel_program_v1.1\obj\Debug\Excel_program_v1.1.dll
+C:\Users\Felipe Diaz\source\repos\Excel_program_v1.1\Excel_program_v1.1\obj\Debug\Excel_program_v1.1.xml
+C:\Users\Felipe Diaz\source\repos\Excel_program_v1.1\Excel_program_v1.1\obj\Debug\Excel_program_v1.1.pdb
+C:\Users\Felipe Diaz\source\repos\Excel_program_v1.1\Excel_program_v1.1\obj\Debug\Excel_program_v1._1.Ribbon1.resources
